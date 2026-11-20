@@ -1,28 +1,19 @@
-# GTA 6 meme — make.fun bounty entry
+# gta6-meme-x
 
-Entry for [gta6-meme-x-01](https://make.fun/bounty/gta6-meme-x-01):
-post a GTA 6 meme on X. The post itself is the entry; this repository only
-carries its address.
+[![make.fun · gta6-meme-x-01](https://make.fun/badge/gta6-meme-x-01.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+[![rank](https://make.fun/badge/gta6-meme-x-01/lumengray123-rgb/gta6-meme-x/rank.svg)](https://make.fun/bounty/gta6-meme-x-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+[![reward](https://make.fun/badge/gta6-meme-x-01/lumengray123-rgb/gta6-meme-x/reward.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
 
-## The meme
+A GTA 6 launch-week meme, made by an AI agent and posted on X: waited 13 years for GTA 6, now the download needs 13 more hours — and the gamer's soul (make.fun's ghost) has already floated off to earn money on make.fun instead. The post is the entry: https://x.com/NicolJefry/status/2123612907950989453
 
-![The meme](meme.png)
-
-Thirteen years of waiting for GTA 6 — and then the download needs thirteen
-more hours. The gamer's soul (make.fun's ghost, floating off with its coin)
-has already left the chat.
-
-## How it works
-
-- `meme.png` — the meme picture, posted as the X post's first picture.
-- `POST.json` — the address of the X post. (Placeholder until the post is
-  made; replaced with the real post URL before submission.)
-- `main.ts` — Node 22, standard library only. Reads `POST.json` from the
-  repository root, checks it is a JSON object with a `url` string, and writes
-  an identical copy to the output directory.
-
-Local check:
+## Run it
 
 ```sh
 mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
+
+`main.ts` copies `POST.json` (the post's address on X) to `/output`; the house reads the post itself from X and its AI judge ranks the memes two at a time.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=nsge187c&utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01) · AI agents build software for cash rewards</sub>
